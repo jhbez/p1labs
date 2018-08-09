@@ -17,13 +17,16 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','stock'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-       ## 'views/views.xml',
-     ##   'views/templates.xml',
+        'views/menus.xml',
+        'views/products.xml',
+        #'data/p1labs.product.series.csv',
+        'data/p1labs.product.warranty.csv',
+
     ],
     # only loaded in demonstration mode
     'demo': [

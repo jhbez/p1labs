@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- © Jose Hernandez <jhbez@outlook.com>. All rights reserved.-->
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="p1labs_iuv_product_tree">
+            <field name="name">p1labs.product.tree</field>
+            <field name="model">p1labs.product</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="type_sale"/>
+                    <field name="display_name"/>
+                    <field name="contract"/>
+                    <field name="stock_product_lot_id"/>
+                    <field name="warranty_id"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="p1labs_iuv_product_form">
+            <field name="name">p1labs.product.form</field>
+            <field name="model">p1labs.product</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header/>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="type_sale"/>
+                                <field name="product_id"
+                                       attrs="{'invisible':[('type_sale','=','plan')], 'required':[('type_sale','!=','plan')]}"/>
+                                <field name="service_id"
+                                       attrs="{'invisible':[('type_sale','=','prepaid')], 'required':[('type_sale','!=','prepaid')]}"/>
+                            </group>
+                            <group>
+                                <field name="stock_product_lot_id"
+                                       domain="[('product_id','=','product_id')]"
+                                       attrs="{'invisible':[('type_sale','=','plan')], 'required':[('type_sale','!=','plan')]}"/>
+                                <field name="contract"
+                                       attrs="{'invisible':[('type_sale','=','plan')], 'required':[('type_sale','!=','plan')]}"/>
+                                <field name="warranty_id"
+                                       attrs="{'invisible':[('type_sale','!=','activations')], 'required':[('type_sale','=','activations')]}"/>
+
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="price"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="p1labs_iaa_product_action_window">
+            <field name="name">Products</field>
+            <field name="res_model">p1labs.product</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="Products" id="p1labs_mi_products" action='p1labs_iaa_product_action_window'
+                  parent="p1labs.p1labs_mi_p1labs"/>
+    </data>
+</odoo>
