@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_msc-client/p1labs_msc-client/p1labs,msc-client/p1labs.msc-client/p1labs,model_msc-client/p1labs_msc-client/p1labs,,1,0,0,0
