@@ -3,6 +3,5 @@
 <odoo>
     <data>
         <menuitem name="P1 Labs" id="p1labs_mi_p1labs" parent="stock.menu_stock_warehouse_mgmt"/>
-        <menuitem name="Sales" id="p1labs_mi_sales" parent="p1labs.p1labs_mi_p1labs"/>
     </data>
 </odoo>

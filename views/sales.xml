@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- © Jose Hernandez <jhbez@outlook.com>. All rights reserved.-->
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="p1labs_iuv_sale_tree">
+            <field name="name">p1labs.sale.tree</field>
+            <field name="model">p1labs.sale</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="folio"/>
+                    <field name="state"/>
+                    <field name="date"/>
+                    <field name="partner_id"/>
+                    <field name="picking_type_id"/>
+                    <field name="amount"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="p1labs_iuv_sale_form">
+            <field name="name">p1labs.sale.form</field>
+            <field name="model">p1labs.sale</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button type="object" class="oe_highlight" string="Validate" name="action_validate"
+                                states="draft"/>
+                        <field name="state" widget="statusbar" statebar_visible='draft,confirmed'/>
+                    </header>
+                    <sheet >
+                        <h1>
+                            <field name="folio" class="oe_inline"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="partner_id" attrs="{'readonly': [('state','=','confirmed')]}"/>
+                                <field name="picking_type_id" attrs="{'readonly': [('state','=','confirmed')]}"/>
+                            </group>
+                            <group>
+                                <field name="date" attrs="{'readonly': [('state','=','confirmed')]}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Products">
+                                <field name="sale_line_ids" attrs="{'readonly': [('state','=','confirmed')]}">
+                                    <tree editable='bottom'>
+                                        <field name="product_id"/>
+                                        <field name="type_sale"/>
+                                        <field name="price"/>
+                                    </tree>
+                                </field>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <h2>
+                                        <field name="amount"/>
+                                    </h2>
+                                </group>
+
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="p1labs_iaa_sale_action_window">
+            <field name="name">Products</field>
+            <field name="res_model">p1labs.sale</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="Sales" id="p1labs_mi_sales" action='p1labs_iaa_sale_action_window'
+                  parent="p1labs.p1labs_mi_p1labs"/>
+    </data>
+</odoo>

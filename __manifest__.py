@@ -24,6 +24,8 @@
         # 'security/ir.model.access.csv',
         'views/menus.xml',
         'views/products.xml',
+        'views/sales.xml',
+        'data/sequence.xml',
         #'data/p1labs.product.series.csv',
         'data/p1labs.product.warranty.csv',
 
