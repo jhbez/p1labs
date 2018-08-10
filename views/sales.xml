@@ -35,9 +35,12 @@
                             <group>
                                 <field name="partner_id" attrs="{'readonly': [('state','=','confirmed')]}"/>
                                 <field name="picking_type_id" attrs="{'readonly': [('state','=','confirmed')]}"/>
+                                <field name="location_id" attrs="{'readonly': [('state','=','confirmed')]}" />
+                                <field name="location_dest_id" attrs="{'readonly': [('state','=','confirmed')]}" />
                             </group>
                             <group>
                                 <field name="date" attrs="{'readonly': [('state','=','confirmed')]}"/>
+                                <field name="stock_picking_id"/>
                             </group>
                         </group>
                         <notebook>

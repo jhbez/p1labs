@@ -35,6 +35,14 @@ class P1labsProduct(models.Model):
             else:
                 row.display_name = str(row.product_id.name) + " + " + str(row.service_id.name)
 
+    @api.depends('product_id')
+    @api.onchange('product_id')
+    def onchange_product_id(self):
+        ids = [r.id for r in self.env['stock.production.lot'].search([('product_id', '=', self.product_id.id)])]
+        return {
+            'domain': {'stock_product_lot_id': [('id', 'in', ids)]}
+        }
+
 
 class P1labsProductWarranty(models.Model):
     _name = 'p1labs.product.warranty'

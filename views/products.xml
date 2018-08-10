@@ -34,7 +34,6 @@
                             </group>
                             <group>
                                 <field name="stock_product_lot_id"
-                                       domain="[('product_id','=','product_id')]"
                                        attrs="{'invisible':[('type_sale','=','plan')], 'required':[('type_sale','!=','plan')]}"/>
                                 <field name="contract"
                                        attrs="{'invisible':[('type_sale','=','plan')], 'required':[('type_sale','!=','plan')]}"/>
