@@ -1,5 +1,24 @@
 # P1 LABS
-## Instalacion 
+## Índice 
+* [Instalación]()
+* [Ejercicio para odoo Developer]()
+* [Licencia]()
+* [Derechos de autor]()    
+## Instalación 
+### Instalación de módulos 
+![](static/img/step1.png)
+![](static/img/step2.png)
+### Configuración de lotes / series
+![](static/img/step3.png)
+### Configuración de trazabilidad de producto
+![](static/img/step4.png)
+### Creación de un producto / tipo de venta (prepago/plan/activación)
+![](static/img/step5.png)
+### Generación de venta
+![](static/img/step6.png)
+### Solo las ventas tipo prepago / activacion procesar albarán
+![](static/img/step7.png)
+
 
 ## Ejercicio para Odoo Developer
 
