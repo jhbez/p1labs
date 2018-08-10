@@ -1,2 +1,12 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_msc-client/p1labs_msc-client/p1labs,msc-client/p1labs.msc-client/p1labs,model_msc-client/p1labs_msc-client/p1labs,,1,0,0,0
+access_p1labs_product_user,p1labs.product user,model_p1labs_product,stock.group_stock_user,1,1,1,0
+access_p1labs_product_manager,p1labs.product manager,model_p1labs_product,stock.group_stock_manager,1,1,1,1
+
+access_p1labs_product_warranty_user,p1labs.product.warranty user,model_p1labs_product_warranty,stock.group_stock_user,1,1,1,0
+access_p1labs_product_warranty_manager,p1labs.product.warranty manager,model_p1labs_product_warranty,stock.group_stock_manager,1,1,1,1
+
+access_p1labs_sale_user,p1labs.sale user,model_p1labs_sale,stock.group_stock_user,1,1,1,0
+access_p1labs_sale_manager,p1labs.sale manager,model_p1labs_sale,stock.group_stock_manager,1,1,1,1
+
+access_p1labs_sale_line_user,p1labs.sale.line user,model_p1labs_sale_line,stock.group_stock_user,1,1,1,0
+access_p1labs_sale_line_manager,p1labs.sale.line manager,model_p1labs_sale_line,stock.group_stock_manager,1,1,1,1
