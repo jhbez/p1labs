@@ -40,7 +40,7 @@
                             </group>
                             <group>
                                 <field name="date" attrs="{'readonly': [('state','=','confirmed')]}"/>
-                                <field name="stock_picking_id"/>
+                                <field name="stock_picking_id" attrs="{'invisible':[('stock_picking_id','=',False)]}"/>
                             </group>
                         </group>
                         <notebook>

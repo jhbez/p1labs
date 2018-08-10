@@ -1,0 +1,299 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-10 02:30+0000\n"
+"PO-Revision-Date: 2018-08-10 02:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es-MX\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"X-Loco-Source-Locale: es_MX\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:9 selection:p1labs.product,type_sale:0
+#, python-format
+msgid "Activations"
+msgstr "Activations"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:12 selection:p1labs.sale,state:0
+#, python-format
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:22 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_contract
+#, python-format
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_create_uid
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_create_uid
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_create_uid 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_create_date
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_create_date
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_create_date
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:13 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_date
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:22 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_location_dest_id
+#, python-format
+msgid "Destination Location"
+msgstr "Ubicación destino"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_display_name
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_display_name
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_display_name
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:12 selection:p1labs.sale,state:0
+#, python-format
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:14 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_folio
+#, python-format
+msgid "Folio"
+msgstr "Folio"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_id 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_id_3068
+#:  model:ir.model.fields,field_description:p1labs.field_p1labs_sale_id 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product___last_update
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty___last_update
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale___last_update
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_write_uid
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_write_uid
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_write_uid
+#:  model:ir.model.fields,field_description:p1labs.field_p1labs_sale_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_write_date
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_write_date
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_write_date
+#:  model:ir.model.fields,field_description:p1labs.field_p1labs_sale_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:51 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_name
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:16 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_picking_type_id
+#, python-format
+msgid "Operation"
+msgstr ""
+"Operación\n"
+
+#. module: p1labs
+#: model:ir.ui.menu,name:p1labs.p1labs_mi_p1labs
+msgid "P1 Labs"
+msgstr "P1 Labs"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_p1labs_sale_id
+msgid "P1Labs Sale"
+msgstr "Ventas P1Labs"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:15 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_partner_id
+#, python-format
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:8 selection:p1labs.product,type_sale:0
+#, python-format
+msgid "Plan"
+msgstr "Plan"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:7 selection:p1labs.product,type_sale:0
+#, python-format
+msgid "Prepaid"
+msgstr "Prepago"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:21 
+#: code:addons/p1labs/models/sales.py:155 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_price 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_price
+#, python-format
+msgid "Price"
+msgstr "Precio"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:18 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_product_id
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_product_id
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:84
+#, python-format
+msgid "Product: %s  Lot: %s Stock: %s  Required: %s"
+msgstr ""
+"Producto: %s  Lote/serie: %s Existencias: %s  Existencias requeridas: %s"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:18 
+#: model:ir.actions.act_window,name:p1labs.p1labs_iaa_product_action_window 
+#: model:ir.actions.act_window,name:p1labs.p1labs_iaa_sale_action_window 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_sale_line_ids
+#:  model:ir.ui.menu,name:p1labs.p1labs_mi_products 
+#: model:ir.ui.view,arch_db:p1labs.p1labs_iuv_sale_form
+#, python-format
+msgid "Products"
+msgstr "Productos"
+
+#. module: p1labs
+#: model:ir.ui.menu,name:p1labs.p1labs_mi_sales
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:24 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_stock_product_lot_id
+#, python-format
+msgid "Series"
+msgstr "Series"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:19 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_service_id
+#, python-format
+msgid "Service"
+msgstr "Servicio"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:21 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_location_id
+#, python-format
+msgid "Source Location"
+msgstr "Ubicación origen"
+
+#. module: p1labs
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_state
+msgid "State"
+msgstr "Estado"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:23 code:addons/p1labs/models/sales.py:43 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_stock_picking_id
+#, python-format
+msgid "Stock picking"
+msgstr "Stock picking"
+
+#. module: p1labs
+#: code:addons/p1labs/models/sales.py:19 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_amount
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:17 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_type_sale
+#:  
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_sale_line_type_sale
+#, python-format
+msgid "Type sale"
+msgstr "Tipo de venta"
+
+#. module: p1labs
+#: model:ir.ui.view,arch_db:p1labs.p1labs_iuv_sale_form
+msgid "Validate"
+msgstr "Validar"
+
+#. module: p1labs
+#: code:addons/p1labs/models/products.py:25 
+#: model:ir.model.fields,field_description:p1labs.field_p1labs_product_warranty_id
+#, python-format
+msgid "Warranty"
+msgstr "Garantía"
+
+#. module: p1labs
+#: model:ir.model,name:p1labs.model_p1labs_product
+msgid "p1labs.product"
+msgstr "p1labs.product"
+
+#. module: p1labs
+#: model:ir.model,name:p1labs.model_p1labs_product_warranty
+msgid "p1labs.product.warranty"
+msgstr "p1labs.product.warranty"
+
+#. module: p1labs
+#: model:ir.model,name:p1labs.model_p1labs_sale
+msgid "p1labs.sale"
+msgstr "p1labs.sale"
+
+#. module: p1labs
+#: model:ir.model,name:p1labs.model_p1labs_sale_line
+msgid "p1labs.sale.line"
+msgstr "p1labs.sale.line"
